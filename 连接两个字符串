@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+
+{
+	void M(char x[],char y[]);
+	char a[99],b[99];
+	printf("请输入第一个字符串 %s",a[99]);
+	gets (a);
+	printf("请输入第二个字符串 %s",b[99]);
+	gets (b);
+	M(a,b); 
+	return 0;
+}
+void M(char x[],char y[])
+{
+int i,j,k;
+for(i=0;x[i]!='\0';i++)
+
+k=i;
+
+for(i=k,j=0;y[j]!='\0';i++,j++)
+{
+	x[i]=y[j];
+}
+printf("%s\n",x);
+}
