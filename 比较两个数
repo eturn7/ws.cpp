@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()  
+{
+	int max(int x,int y);
+	int min(int x,int y);
+	int a,b,c,d;
+	printf("请输入两个数:");
+	scanf("%d%d",&a,&b);
+	c=max(a,b);
+	d=min(a,b);
+	printf("比较的结果是:%d %d\n",c,d); 
+	return 0;
+}
+int max(int x,int y)
+{
+	int t;
+	if(x>y)
+	{
+		t=x;
+	}
+	else
+	{
+		t=y;
+	}
+	return t;
+}
+int min(int x,int y)
+{
+	int t;
+	if(x>y)
+	{
+		t=y;
+	}
+	else
+	{
+		t=x;
+	}
+	return t;
+}
