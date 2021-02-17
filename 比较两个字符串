@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	void sort(int x[],int n);
+	int a[2],i;
+	printf("要比较的两个数: ");
+	for(i=0;i<2;i++)
+	scanf("%d",&a[i]);
+	sort(a,2);
+	printf("比较的结果是 : ");
+	for(i=0;i<2;i++)
+	printf("%d ",a[i]); 
+	return 0;
+ } 
+ void sort(int x[],int n)
+ {
+ 	int i,j,k,t;
+ 	for(i=0;i<n-1;i++)
+ 	{
+ 		k=i;
+ 		for(j=i+1;j<n;j++)
+ 		if(x[j]<x[k])
+ 		{
+ 			k=j;
+ 			t=x[k];
+ 			x[k]=x[i];
+ 			x[i]=t;
+		 }
+	 }
+ }
