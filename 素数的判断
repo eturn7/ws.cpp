@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("请输入一个数:"); 
+	scanf("%d",&n);
+	void sort(int x);
+	sort(n); 
+	
+	
+	return 0;
+}
+void sort(int x)
+{
+	
+	int i;
+	for(i=2;i<x;i++)
+	
+
+	
+	if(x%i==0)
+	{
+		break;
+	}
+	if(i==x)
+	{
+		printf("%d是素数\n",x);
+	}
+	else
+	{
+		printf("%d不是素数\n",x);
+	}
+	
+}
